@@ -1,0 +1,274 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: scroll;
+    
+    
+    
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(
+    rgba(0,0,0, 0.8),
+    rgba(0,0,0, 0.8)),  url(1.jpg);
+    background-size: cover;
+   
+   
+    
+}
+
+.logo img{
+    width: 15.25rem;
+    height: 7.5rem;
+    margin-right: 30rem;
+   
+    
+    
+}
+
+.buttons{
+    margin-top: 2rem;
+    
+    
+}
+
+.english{
+    width: 10rem;
+    height: 2.65rem;
+    font-size: 1.20rem;
+    font-weight: 500;
+    border-radius: 0.45rem;
+    background: transparent;
+    color: white;
+    
+   
+   
+}
+
+.signIn{
+    width: 7rem;
+    height: 2.65rem;
+    font-size: 1.20rem;
+    border-radius: 0.45rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(235, 10, 22);
+    
+    margin-left: 2rem;
+    
+}
+
+.signIn:hover{
+    background-color: rgb(112, 21, 21);
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-1{
+    font-size: 4.8rem;
+    font-weight:900;
+}
+
+.text-2{
+    font-size: 4.8rem;
+    font-weight:900;
+    padding-top: 1rem;
+}
+
+.text-3{
+    font-size: 1.8rem;
+    font-weight:300;
+    padding-top: 1.3rem;
+    color: white;
+}
+
+.text-4{
+    font-size: 1.8rem;
+    font-weight:300;
+    padding-top: 1.7rem;
+    color: white;
+}
+
+.input input{
+    width: 460.70px;
+    height: 70px;
+    line-height: 1.5rem;
+    transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
+   background: transparent;
+    color: transparent;
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1rem;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    color: white;
+    
+    
+    
+}
+
+.middel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    
+}
+
+.searbutt{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+    
+    
+    
+}
+
+.searbutt button{
+    width: 240px;
+    height: 70px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    
+    
+    
+}
+
+.brk-line{
+    width: 100%;
+    height: 1rem;
+    background-color: #282828;
+}
+
+
+
+
+.text-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.t-1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.t-2{
+    font-size: 2rem;
+}
+
+.page-3{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 1200px;
+}
+
+.faq h2{
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 70%;
+    
+    
+   
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
+    
+    
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content-1{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content-1{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq p{
+    font-size: 2rem;
+}
+
